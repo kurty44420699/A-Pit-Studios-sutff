@@ -1,4 +1,4 @@
-[gd_scene load_steps=32 format=3 uid="uid://w324y67ih531"]
+[gd_scene load_steps=33 format=3 uid="uid://w324y67ih531"]
 
 [ext_resource type="Script" uid="uid://d2gqyo2ftllyh" path="res://Scripts/game.gd" id="1_msr6v"]
 [ext_resource type="Script" uid="uid://4ftderbx35rt" path="res://Scripts/Main Character Body2D.gd" id="2_pdlhe"]
@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://cuoktglh2x2ua" path="res://Animation Assets and Icons/WalkingPrince.png" id="5_g2nhv"]
 [ext_resource type="Texture2D" uid="uid://boj8v846xf0uh" path="res://Animation Assets and Icons/ForeGround.png" id="6_chps7"]
 [ext_resource type="Texture2D" uid="uid://dhrsvs040gj37" path="res://Animation Assets and Icons/icon.svg" id="7_pdlhe"]
+[ext_resource type="PackedScene" uid="uid://cck4cuw2v1w21" path="res://pause_menu.tscn" id="8_lkoj3"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_iotsf"]
 size = Vector2(18, 36)
@@ -259,3 +260,7 @@ shape = SubResource("RectangleShape2D_lkoj3")
 position = Vector2(2.3543835e-05, 4.7683716e-07)
 scale = Vector2(0.17187549, 0.171875)
 texture = ExtResource("7_pdlhe")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Pause Menu" parent="CanvasLayer" instance=ExtResource("8_lkoj3")]
