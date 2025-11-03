@@ -187,6 +187,11 @@ autoplay = "Idle Animation"
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
 zoom = Vector2(3, 3)
 
+[node name="Dash_timer" type="Timer" parent="CharacterBody2D"]
+wait_time = 0.2
+
+[node name="Can_dash_again_timer" type="Timer" parent="CharacterBody2D"]
+
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 position = Vector2(53, 112)
 
@@ -264,3 +269,6 @@ texture = ExtResource("7_pdlhe")
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="Pause Menu" parent="CanvasLayer" instance=ExtResource("8_lkoj3")]
+
+[connection signal="timeout" from="CharacterBody2D/Dash_timer" to="CharacterBody2D" method="_on_dash_timer_timeout"]
+[connection signal="timeout" from="CharacterBody2D/Can_dash_again_timer" to="CharacterBody2D" method="_on_can_dash_again_timer_timeout"]
