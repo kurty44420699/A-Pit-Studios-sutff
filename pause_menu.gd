@@ -19,7 +19,8 @@ func _on_restart_pressed():
 	get_tree().reload_current_scene()
 
 func _on_quit_pressed():
-	get_tree().quit()
+	get_tree().change_scene_to_file("res://control.tscn")
+	print("Quitted to Main Menu")
 
 func _process(_delta):
 	if Input.is_action_just_pressed("Escape"):

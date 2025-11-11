@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://c4sotfhhsvner"]
+[gd_scene load_steps=3 format=3 uid="uid://c4sotfhhsvner"]
 
 [ext_resource type="Script" uid="uid://cnt1v1wwlj1sn" path="res://Main Menu.gd" id="1_0fbet"]
+[ext_resource type="Texture2D" uid="uid://dq2f3wit24cg6" path="res://Animation Assets and Icons/Main Background.jpg" id="2_62e2m"]
 
 [node name="Main Menu" type="Control"]
 layout_mode = 3
@@ -10,6 +11,11 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_0fbet")
+
+[node name="MainBackground" type="Sprite2D" parent="."]
+position = Vector2(577.50006, 323.50003)
+scale = Vector2(0.30078128, 0.29675925)
+texture = ExtResource("2_62e2m")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 1

@@ -8,3 +8,4 @@ func _enter_tree() -> void:
 
 func _ready() -> void:
 	print("Hitbox is ready!")
+	
