@@ -1,15 +1,16 @@
-[gd_scene load_steps=45 format=3 uid="uid://w324y67ih531"]
+[gd_scene load_steps=46 format=3 uid="uid://w324y67ih531"]
 
 [ext_resource type="Script" uid="uid://d2gqyo2ftllyh" path="res://Scripts/game.gd" id="1_msr6v"]
 [ext_resource type="Script" uid="uid://4ftderbx35rt" path="res://Scripts/Main Character Body2D.gd" id="2_pdlhe"]
-[ext_resource type="Script" uid="uid://bp15wqvuys7mg" path="res://Game Scene/enemy_1.gd" id="3_g2nhv"]
-[ext_resource type="Script" uid="uid://bmtpq8lqtru6q" path="res://Game Scene/Main Character Hitbox2D.gd" id="3_msr6v"]
+[ext_resource type="Script" uid="uid://bp15wqvuys7mg" path="res://Scripts/enemy_1.gd" id="3_g2nhv"]
+[ext_resource type="Script" uid="uid://bmtpq8lqtru6q" path="res://Scripts/Main Character Hitbox2D.gd" id="3_msr6v"]
 [ext_resource type="Texture2D" uid="uid://6dwu78wp0o7d" path="res://Animation Assets and Icons/IdlePrince.png" id="4_mpr0x"]
 [ext_resource type="Texture2D" uid="uid://cuoktglh2x2ua" path="res://Animation Assets and Icons/WalkingPrince.png" id="5_g2nhv"]
 [ext_resource type="Texture2D" uid="uid://boj8v846xf0uh" path="res://Animation Assets and Icons/ForeGround.png" id="6_chps7"]
 [ext_resource type="Texture2D" uid="uid://dhrsvs040gj37" path="res://Animation Assets and Icons/icon.svg" id="7_pdlhe"]
 [ext_resource type="Texture2D" uid="uid://dh0evegviu1eb" path="res://Animation Assets and Icons/PunchPrince.png" id="8_chps7"]
 [ext_resource type="Texture2D" uid="uid://bpwrxc67nxmgm" path="res://Animation Assets and Icons/Background 2.png" id="9_mpr0x"]
+[ext_resource type="PackedScene" uid="uid://cck4cuw2v1w21" path="res://Game Scene/pause_menu.tscn" id="12_bvvsu"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7knny"]
 size = Vector2(384, 20)
@@ -363,6 +364,8 @@ scale = Vector2(0.064333335, 0.057)
 texture = ExtResource("6_chps7")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Pause Menu" parent="CanvasLayer" instance=ExtResource("12_bvvsu")]
 
 [connection signal="timeout" from="Main Character Body2D2/Dash_timer" to="Main Character Body2D2" method="_on_dash_timer_timeout"]
 [connection signal="timeout" from="Main Character Body2D2/Can_dash_again_timer" to="Main Character Body2D2" method="_on_can_dash_again_timer_timeout"]

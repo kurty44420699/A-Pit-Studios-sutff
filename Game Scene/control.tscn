@@ -1,0 +1,88 @@
+[gd_scene load_steps=3 format=3 uid="uid://c4sotfhhsvner"]
+
+[ext_resource type="Script" uid="uid://cnt1v1wwlj1sn" path="res://Scripts/Main Menu.gd" id="1_0fbet"]
+[ext_resource type="Texture2D" uid="uid://dq2f3wit24cg6" path="res://Animation Assets and Icons/Main Background.jpg" id="2_62e2m"]
+
+[node name="Main Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_0fbet")
+
+[node name="MainBackground" type="Sprite2D" parent="."]
+position = Vector2(577.50006, 323.50003)
+scale = Vector2(0.30078128, 0.29675925)
+texture = ExtResource("2_62e2m")
+
+[node name="MainButtons" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -35.0
+offset_top = -50.5
+offset_right = 35.0
+offset_bottom = 50.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Start" type="Button" parent="MainButtons"]
+layout_mode = 2
+text = "Start
+"
+
+[node name="Options" type="Button" parent="MainButtons"]
+layout_mode = 2
+text = "Options
+"
+
+[node name="Quit" type="Button" parent="MainButtons"]
+layout_mode = 2
+text = "Quit
+"
+
+[node name="OptionsButtons" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -119.0
+offset_top = -86.0
+offset_right = 120.0
+offset_bottom = 116.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="OptionsButtons"]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 23.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 25
+text = "          Options"
+
+[node name="Back" type="Button" parent="OptionsButtons"]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 58.0
+offset_top = -50.0
+offset_right = -59.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "Back"
+
+[connection signal="pressed" from="MainButtons/Start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="MainButtons/Options" to="." method="_on_options_pressed"]
+[connection signal="pressed" from="MainButtons/Quit" to="." method="_on_quit_pressed"]
+[connection signal="pressed" from="OptionsButtons/Back" to="." method="_on_back_options_pressed"]
