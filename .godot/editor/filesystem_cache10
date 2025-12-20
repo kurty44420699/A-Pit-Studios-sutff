@@ -1,0 +1,30 @@
+63f7b34db8d8cdea90c76aacccf841ec
+::res://::1766151939
+export_presets.cfg::TextFile::-1::1761811762::0::1::::<><><>0<>0<><>::
+README.md::TextFile::-1::1762175881::0::1::::<><><>0<>0<><>::
+::res://Animation Assets and Icons/::1763561464
+Background 2.png::CompressedTexture2D::3485743065397605584::1762775133::1762842292::1::::<><><>0<>0<>30686fe10f462d16aaaf81e4d1f0c3d7<>res://.godot/imported/Background 2.png-a4d1bd389118d0f3b5414e55417627a7.ctex::
+ForeGround.png::CompressedTexture2D::3389686836354731339::1761666263::1761805093::1::::<><><>0<>0<>4a6b024cea8cbf944941329d06f24aa6<>res://.godot/imported/ForeGround.png-7c441fd628e9a919d527b12ad8cfe04a.ctex::
+icon.svg::CompressedTexture2D::7686809771298041116::1759466857::1761805088::1::::<><><>0<>0<>9d388186c858cb1d4ff66ea36f8eceeb<>res://.godot/imported/icon.svg-9f50f093d7056e45a0925e48986810cb.ctex::
+IdlePrince.png::CompressedTexture2D::2183420508506517939::1761758825::1761805089::1::::<><><>0<>0<>dd2de1d8ba20d9121f5f1c81c9b04f46<>res://.godot/imported/IdlePrince.png-be3783acc0b6c300a6209b7ef34c34c2.ctex::
+Main Background.jpg::CompressedTexture2D::8338376504613239659::1762775119::1762842291::1::::<><><>0<>0<>3c2110fda593a81e20eca68862dc9f54<>res://.godot/imported/Main Background.jpg-9189ac43328e498e75d386a1131df80f.ctex::
+PrincePlaceHolder.png::CompressedTexture2D::4564442336044269217::1761665889::1761805090::1::::<><><>0<>0<>56113b9741f32f9034c3cf91a6228640<>res://.godot/imported/PrincePlaceHolder.png-76c25a2a0c51ebcfd306f51d0e20e68b.ctex::
+PunchPrince.png::CompressedTexture2D::7702473990367970865::1761758825::1761805089::1::::<><><>0<>0<>144963db4ceda98bd30397cfebd818d4<>res://.godot/imported/PunchPrince.png-c210af75c375195a1ef20665e20ecf6b.ctex::
+Tile01 (1).png::CompressedTexture2D::2973040077400016443::1763561232::1763561464::1::::<><><>0<>0<>61f5d1670c78f09b93a6466e46120a7d<>res://.godot/imported/Tile01 (1).png-1f6d4d054ef119a4f44c6fa8724fd1fe.ctex::
+Tile01.png::CompressedTexture2D::473335622902791225::1763558665::1763559439::1::::<><><>0<>0<>09fc5ebb84914fcf551b5a04acfe89b5<>res://.godot/imported/Tile01.png-b02d84b5ade00f0bdde16c75d7cedde3.ctex::
+Tile02 (1).png::CompressedTexture2D::543534746601646380::1763561249::1763561464::1::::<><><>0<>0<>d6e35ec160cc6862ff74c5d9ab01a9c8<>res://.godot/imported/Tile02 (1).png-c50919344ba54154ba28be58738a729a.ctex::
+Tile02.png::CompressedTexture2D::6646732573125115571::1763558676::1763559439::1::::<><><>0<>0<>a09a852244305d512e96a50487b6e546<>res://.godot/imported/Tile02.png-4632a6881bc60d969b2916b670780bb6.ctex::
+Tile03.png::CompressedTexture2D::5720029088519417120::1763558684::1763559439::1::::<><><>0<>0<>a470a5e7837cd191ccf41ecff324930d<>res://.godot/imported/Tile03.png-91e3e474c2fc8a75625b751b322ae3ce.ctex::
+WalkingPrince.png::CompressedTexture2D::6206160961203558684::1761758825::1761805089::1::::<><><>0<>0<>2336223ddc7562a9e77ea1d7a351254c<>res://.godot/imported/WalkingPrince.png-fabda8d89bd20ebd78e2a850d251eb12.ctex::
+::res://Game Scene/::1763303133
+control.tscn::PackedScene::6846360874218464949::1763295582::0::1::::<><><>0<>0<><>::uid://cnt1v1wwlj1sn::::res://Scripts/Main Menu.gd<>uid://dq2f3wit24cg6::::res://Animation Assets and Icons/Main Background.jpg
+game.tscn::PackedScene::1603649593892598082::1763303133::0::1::::<><><>0<>0<><>::uid://d2gqyo2ftllyh::::res://Scripts/game.gd<>uid://4ftderbx35rt::::res://Scripts/Main Character Body2D.gd<>uid://bp15wqvuys7mg::::res://Scripts/enemy_1.gd<>uid://bmtpq8lqtru6q::::res://Scripts/Main Character Hitbox2D.gd<>uid://6dwu78wp0o7d::::res://Animation Assets and Icons/IdlePrince.png<>uid://cuoktglh2x2ua::::res://Animation Assets and Icons/WalkingPrince.png<>uid://boj8v846xf0uh::::res://Animation Assets and Icons/ForeGround.png<>uid://dhrsvs040gj37::::res://Animation Assets and Icons/icon.svg<>uid://dh0evegviu1eb::::res://Animation Assets and Icons/PunchPrince.png<>uid://bpwrxc67nxmgm::::res://Animation Assets and Icons/Background 2.png<>uid://cck4cuw2v1w21::::res://Game Scene/pause_menu.tscn
+pause_menu.tscn::PackedScene::4935628282289469704::1763192742::0::1::::<><><>0<>0<><>::uid://d3oex6o06gcc4::::res://Scripts/pause_menu.gd
+::res://Scripts/::1763295582
+enemy_1.gd::GDScript::3494788830874063086::1762877959::0::1::::<>CharacterBody2D<><>0<>0<><>::
+game.gd::GDScript::9067762204058151755::1762176241::0::1::::<>Node2D<><>0<>0<><>::
+Main Character Body2D.gd::GDScript::2046957570949898109::1763201864::0::1::::<>CharacterBody2D<><>0<>0<><>::
+Main Character Hitbox2D.gd::GDScript::3268851063287053558::1762877782::0::1::::<>CollisionShape2D<><>0<>0<><>::
+Main Menu.gd::GDScript::5726137056099154065::1763295582::0::1::::<>Control<><>0<>0<><>::
+pause_menu.gd::GDScript::9153736553760591785::1763197030::0::1::::<>Control<><>0<>0<><>::
+::res://Windows Executable/::1761811761
