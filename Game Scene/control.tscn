@@ -1,7 +1,10 @@
-[gd_scene load_steps=3 format=3 uid="uid://c4sotfhhsvner"]
+[gd_scene load_steps=6 format=3 uid="uid://c4sotfhhsvner"]
 
 [ext_resource type="Script" uid="uid://cnt1v1wwlj1sn" path="res://Scripts/Main Menu.gd" id="1_0fbet"]
-[ext_resource type="Texture2D" uid="uid://dq2f3wit24cg6" path="res://Animation Assets and Icons/Main Background.jpg" id="2_62e2m"]
+[ext_resource type="Texture2D" uid="uid://bj46ea4cowo6p" path="res://Animation Assets and Icons/BeginnerBGTile02.png" id="2_7x4qn"]
+[ext_resource type="Texture2D" uid="uid://cnq3bqfb4q0lw" path="res://Animation Assets and Icons/Tile03.png" id="3_4wybq"]
+[ext_resource type="FontFile" uid="uid://cl56blp46e6m1" path="res://Font/Trajan Pro Regular.ttf" id="3_7x4qn"]
+[ext_resource type="Texture2D" uid="uid://g0j1epinjavx" path="res://Animation Assets and Icons/Tile01.png" id="4_7x4qn"]
 
 [node name="Main Menu" type="Control"]
 layout_mode = 3
@@ -13,9 +16,22 @@ grow_vertical = 2
 script = ExtResource("1_0fbet")
 
 [node name="MainBackground" type="Sprite2D" parent="."]
-position = Vector2(577.50006, 323.50003)
-scale = Vector2(0.30078128, 0.29675925)
-texture = ExtResource("2_62e2m")
+position = Vector2(575.00006, 325)
+scale = Vector2(0.38533333, 0.4333333)
+texture = ExtResource("2_7x4qn")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 296.0
+offset_top = 31.0
+offset_right = 868.0
+offset_bottom = 240.0
+theme_override_fonts/font = ExtResource("3_7x4qn")
+theme_override_font_sizes/font_size = 50
+text = "Idk the name for this game"
+horizontal_alignment = 1
+vertical_alignment = 1
+justification_flags = 171
 
 [node name="MainButtons" type="VBoxContainer" parent="."]
 layout_mode = 1
@@ -24,27 +40,77 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -35.0
-offset_top = -50.5
-offset_right = 35.0
-offset_bottom = 50.5
+offset_left = -59.0
+offset_top = -37.0
+offset_right = 23.0
+offset_bottom = 64.0
 grow_horizontal = 2
 grow_vertical = 2
+scale = Vector2(1.5, 1.5)
 
 [node name="Start" type="Button" parent="MainButtons"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("3_7x4qn")
 text = "Start
 "
 
 [node name="Options" type="Button" parent="MainButtons"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("3_7x4qn")
 text = "Options
 "
 
 [node name="Quit" type="Button" parent="MainButtons"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("3_7x4qn")
 text = "Quit
 "
+
+[node name="2D sprite menu 1" type="Sprite2D" parent="MainButtons"]
+position = Vector2(96.667, -13.333)
+scale = Vector2(0.2074997, 0.13999999)
+texture = ExtResource("3_4wybq")
+
+[node name="2D sprite menu 2" type="Sprite2D" parent="MainButtons"]
+position = Vector2(-12.666667, -13.333333)
+scale = Vector2(0.2074997, 0.13999999)
+texture = ExtResource("3_4wybq")
+flip_h = true
+
+[node name="2D sprite menu 3" type="Sprite2D" parent="MainButtons"]
+position = Vector2(55.333324, -13.333333)
+scale = Vector2(0.22, 0.14)
+texture = ExtResource("4_7x4qn")
+
+[node name="2D sprite menu 4" type="Sprite2D" parent="MainButtons"]
+position = Vector2(20.666668, -13.333333)
+scale = Vector2(0.13000007, 0.14)
+texture = ExtResource("4_7x4qn")
+
+[node name="2D sprite menu 5" type="Sprite2D" parent="MainButtons"]
+position = Vector2(96.66667, 93.99999)
+scale = Vector2(0.2074997, 0.13999999)
+texture = ExtResource("3_4wybq")
+flip_v = true
+
+[node name="2D sprite menu 6" type="Sprite2D" parent="MainButtons"]
+position = Vector2(-13.999999, 94)
+scale = Vector2(0.20749968, 0.13999999)
+texture = ExtResource("3_4wybq")
+flip_h = true
+flip_v = true
+
+[node name="2D sprite menu 7" type="Sprite2D" parent="MainButtons"]
+position = Vector2(55.333336, 94.00001)
+scale = Vector2(0.207, 0.14)
+texture = ExtResource("4_7x4qn")
+flip_v = true
+
+[node name="2D sprite menu 8" type="Sprite2D" parent="MainButtons"]
+position = Vector2(20.666666, 94)
+scale = Vector2(0.14500022, 0.14)
+texture = ExtResource("4_7x4qn")
+flip_v = true
 
 [node name="OptionsButtons" type="Panel" parent="."]
 layout_mode = 1
@@ -53,21 +119,37 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -119.0
-offset_top = -86.0
-offset_right = 120.0
-offset_bottom = 116.0
+offset_left = -237.0
+offset_top = -168.0
+offset_right = 2.0
+offset_bottom = 34.0
 grow_horizontal = 2
 grow_vertical = 2
+scale = Vector2(2, 2)
 
 [node name="Label" type="Label" parent="OptionsButtons"]
 layout_mode = 1
 anchors_preset = 10
 anchor_right = 1.0
-offset_bottom = 23.0
+offset_left = 61.0
+offset_top = -0.5
+offset_right = 61.0
+offset_bottom = 34.5
 grow_horizontal = 2
+scale = Vector2(0.5, 0.5)
+theme_override_fonts/font = ExtResource("3_7x4qn")
 theme_override_font_sizes/font_size = 25
-text = "          Options"
+text = "        Options"
+
+[node name="Controls" type="Button" parent="OptionsButtons"]
+layout_mode = 0
+offset_left = 98.0
+offset_top = 21.0
+offset_right = 172.0
+offset_bottom = 52.0
+scale = Vector2(0.5, 0.5)
+theme_override_fonts/font = ExtResource("3_7x4qn")
+text = "Controls"
 
 [node name="Back" type="Button" parent="OptionsButtons"]
 layout_mode = 1
@@ -75,12 +157,24 @@ anchors_preset = 12
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 58.0
-offset_top = -50.0
-offset_right = -59.0
+offset_left = 90.0
+offset_top = -32.0
+offset_right = -27.0
+offset_bottom = 18.0
 grow_horizontal = 2
 grow_vertical = 0
+scale = Vector2(0.5, 0.5)
+theme_override_fonts/font = ExtResource("3_7x4qn")
 text = "Back"
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 0
+offset_left = 56.0
+offset_top = 531.0
+offset_right = 164.0
+offset_bottom = 554.0
+theme_override_fonts/font = ExtResource("3_7x4qn")
+text = "Version 0.01"
 
 [connection signal="pressed" from="MainButtons/Start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="MainButtons/Options" to="." method="_on_options_pressed"]

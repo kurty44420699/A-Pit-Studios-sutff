@@ -1,51 +1,142 @@
-[gd_scene load_steps=2 format=3 uid="uid://cck4cuw2v1w21"]
+[gd_scene load_steps=5 format=3 uid="uid://cck4cuw2v1w21"]
 
 [ext_resource type="Script" uid="uid://d3oex6o06gcc4" path="res://Scripts/pause_menu.gd" id="1_hdmo1"]
+[ext_resource type="FontFile" uid="uid://cl56blp46e6m1" path="res://Font/Trajan Pro Regular.ttf" id="2_7tc1i"]
+[ext_resource type="Texture2D" uid="uid://cnq3bqfb4q0lw" path="res://Animation Assets and Icons/Tile03.png" id="2_u4qt4"]
+[ext_resource type="Texture2D" uid="uid://g0j1epinjavx" path="res://Animation Assets and Icons/Tile01.png" id="3_7tc1i"]
 
 [node name="Pause Menu" type="Control"]
 process_mode = 3
 layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = 32.0
-offset_top = 20.0
-offset_right = 32.0
-offset_bottom = 20.0
-grow_horizontal = 2
-grow_vertical = 2
+anchors_preset = 0
+offset_top = 105.0
+offset_right = 1153.0
+offset_bottom = 105.0
 script = ExtResource("1_hdmo1")
 
 [node name="PanelContainer" type="PanelContainer" parent="."]
+self_modulate = Color(0.43529412, 0.8117647, 0.8509804, 1)
+clip_contents = true
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -20.0
-offset_top = -20.0
-offset_right = 20.0
-offset_bottom = 20.0
+offset_left = -581.48096
+offset_top = -106.363205
+offset_right = 574.51904
+offset_bottom = 544.6368
 grow_horizontal = 2
 grow_vertical = 2
 
 [node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer"]
 layout_mode = 2
+alignment = 1
 
 [node name="Resume" type="Button" parent="PanelContainer/VBoxContainer"]
 layout_mode = 2
-text = "Resume"
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("2_7tc1i")
+theme_override_font_sizes/font_size = 25
+text = "          Resume          "
 
-[node name="Restart" type="Button" parent="PanelContainer/VBoxContainer"]
+[node name="Options" type="Button" parent="PanelContainer/VBoxContainer"]
 layout_mode = 2
-text = "Restart"
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("2_7tc1i")
+theme_override_font_sizes/font_size = 24
+text = "          Options          "
 
 [node name="Quit" type="Button" parent="PanelContainer/VBoxContainer"]
 layout_mode = 2
-text = "Quit
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("2_7tc1i")
+theme_override_font_sizes/font_size = 25
+text = "Quit to Main Menu
 "
 
+[node name="Sprite2D" type="Sprite2D" parent="PanelContainer/VBoxContainer"]
+position = Vector2(442.98096, 260.3632)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("2_u4qt4")
+flip_h = true
+
+[node name="Sprite2D2" type="Sprite2D" parent="PanelContainer/VBoxContainer"]
+position = Vector2(461.981, 260.36325)
+scale = Vector2(0.093, 0.1)
+texture = ExtResource("3_7tc1i")
+
+[node name="Sprite2D3" type="Sprite2D" parent="PanelContainer/VBoxContainer"]
+position = Vector2(479.981, 260.3632)
+scale = Vector2(0.093, 0.1)
+texture = ExtResource("3_7tc1i")
+
+[node name="Sprite2D4" type="Sprite2D" parent="PanelContainer/VBoxContainer"]
+position = Vector2(497.981, 260.3632)
+scale = Vector2(0.093, 0.1)
+texture = ExtResource("3_7tc1i")
+
+[node name="Sprite2D5" type="Sprite2D" parent="PanelContainer/VBoxContainer"]
+position = Vector2(515.981, 260.3632)
+scale = Vector2(0.093, 0.1)
+texture = ExtResource("3_7tc1i")
+
+[node name="Sprite2D6" type="Sprite2D" parent="PanelContainer/VBoxContainer"]
+position = Vector2(533.98096, 260.3632)
+scale = Vector2(0.093, 0.1)
+texture = ExtResource("3_7tc1i")
+
+[node name="Sprite2D7" type="Sprite2D" parent="PanelContainer/VBoxContainer"]
+position = Vector2(551.98096, 260.3632)
+scale = Vector2(0.093, 0.1)
+texture = ExtResource("3_7tc1i")
+
+[node name="Sprite2D8" type="Sprite2D" parent="PanelContainer/VBoxContainer"]
+position = Vector2(569.98096, 260.3632)
+scale = Vector2(0.093, 0.1)
+texture = ExtResource("3_7tc1i")
+
+[node name="Sprite2D9" type="Sprite2D" parent="PanelContainer/VBoxContainer"]
+position = Vector2(587.98096, 260.3632)
+scale = Vector2(0.093, 0.1)
+texture = ExtResource("3_7tc1i")
+
+[node name="Sprite2D10" type="Sprite2D" parent="PanelContainer/VBoxContainer"]
+position = Vector2(605.98096, 260.3632)
+scale = Vector2(0.093, 0.1)
+texture = ExtResource("3_7tc1i")
+
+[node name="Sprite2D11" type="Sprite2D" parent="PanelContainer/VBoxContainer"]
+position = Vector2(623.98096, 260.3632)
+scale = Vector2(0.093, 0.1)
+texture = ExtResource("3_7tc1i")
+
+[node name="Sprite2D12" type="Sprite2D" parent="PanelContainer/VBoxContainer"]
+position = Vector2(641.98096, 260.3632)
+scale = Vector2(0.093, 0.1)
+texture = ExtResource("3_7tc1i")
+
+[node name="Sprite2D13" type="Sprite2D" parent="PanelContainer/VBoxContainer"]
+position = Vector2(659.981, 260.3632)
+scale = Vector2(0.093, 0.1)
+texture = ExtResource("3_7tc1i")
+
+[node name="Sprite2D14" type="Sprite2D" parent="PanelContainer/VBoxContainer"]
+position = Vector2(677.981, 260.3632)
+scale = Vector2(0.093, 0.1)
+texture = ExtResource("3_7tc1i")
+
+[node name="Sprite2D15" type="Sprite2D" parent="PanelContainer/VBoxContainer"]
+position = Vector2(695.98096, 260.3632)
+scale = Vector2(0.093, 0.1)
+texture = ExtResource("3_7tc1i")
+
+[node name="Sprite2D16" type="Sprite2D" parent="PanelContainer/VBoxContainer"]
+position = Vector2(714.98096, 260.3632)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("2_u4qt4")
+
 [connection signal="pressed" from="PanelContainer/VBoxContainer/Resume" to="." method="_on_resume_pressed"]
-[connection signal="pressed" from="PanelContainer/VBoxContainer/Restart" to="." method="_on_restart_pressed"]
+[connection signal="pressed" from="PanelContainer/VBoxContainer/Options" to="." method="_on_restart_pressed"]
 [connection signal="pressed" from="PanelContainer/VBoxContainer/Quit" to="." method="_on_quit_pressed"]

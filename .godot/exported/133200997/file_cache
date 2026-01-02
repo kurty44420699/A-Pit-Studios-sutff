@@ -1,1 +1,12 @@
-res://Game Scene/game.tscn::74352c40f4ad83ff7e80bf2eb3f3630f::1761808542::res://.godot/exported/133200997/export-63b57f5e18117d58c3d82dce33a432ca-game.scn
+res://Game Scene/game.tscn::5956d660b8858af0640f567b30f44d1c::1766859575::res://.godot/exported/133200997/export-63b57f5e18117d58c3d82dce33a432ca-game.scn
+res://addons/DropShadowCaster2D/Examples/Example1.tscn::92b3671beb475576486d8b91f5fde28d::1766561656::res://.godot/exported/133200997/export-cda33bd19136054e2fe20192c5962dc8-Example1.scn
+res://Game Scene/control.tscn::583fa1a75db17be331988a21b1db46a7::1766945170::res://.godot/exported/133200997/export-a30cc0bee2b55ef605880494c23556fa-control.scn
+res://Game Scene/pause_menu.tscn::4deb348947d0e4c1ce1aa3d877d060d5::1766945941::res://.godot/exported/133200997/export-c1c802bb543b61bd97026b337129aead-pause_menu.scn
+res://samples/softbody2d/attach-to-character-controller/attach.tscn::1981d9d0fb62367a146fe0e616e98e6f::1766562095::res://.godot/exported/133200997/export-85c8cc1f2a1438288bf8b33d0380456e-attach.scn
+res://samples/softbody2d/car-demo/car.tscn::b1d3d2877fdf76e21517927a24d992d1::1766562095::res://.godot/exported/133200997/export-ba6652c9b952fdbb016c46a28897f015-car.scn
+res://samples/softbody2d/create-a-softbody/create.tscn::a3d3e628a954f06d1395c0417922a233::1766562095::res://.godot/exported/133200997/export-92bf1d9cc423ab48c5b88cdcaf350213-create.scn
+res://samples/softbody2d/demo.tscn::67defbc2683cbab1356fe4000e773f78::1766562095::res://.godot/exported/133200997/export-860ba145b705943ad1d38aa09409398b-demo.scn
+res://samples/softbody2d/pickable_rigidbody.tscn::93a37b4bb5d23aca89b6f8b622746a2d::1766562095::res://.godot/exported/133200997/export-c30d188b252b25a22610c2b98b62640a-pickable_rigidbody.scn
+res://samples/softbody2d/softbody2d_phys_bouncy.tres::57a4bc8af5a17d26eed09f5e8a6bc23a::1766562095::res://.godot/exported/133200997/export-fb44730d2b934bfa1a117edeee8a73bf-softbody2d_phys_bouncy.res
+res://samples/softbody2d/softbody2d_phys_slippery.tres::7bb2e1643bd69078026fcbba92b88b10::1766562095::res://.godot/exported/133200997/export-9c42b8c94296da65a37b355006b59122-softbody2d_phys_slippery.res
+res://samples/softbody2d/tutorial.tscn::05aa7e8c779604de1a28bb30f563ac7d::1766562095::res://.godot/exported/133200997/export-2628788171ecb435ff9cbf0eee333ed9-tutorial.scn

@@ -10,12 +10,14 @@ enum State {
 
 var current_state: State = State.IDLE
 
-const SPEED = 150.0
-const JUMP_VELOCITY = -350.0
+const SPEED = 300.0
+const JUMP_VELOCITY = -400.0
 const DASH_SPEED = 750.0
 
-var has_acquired_dash := false
+var has_acquired_dash = false
 var can_dash := true
+var facing_direction := 1  
+
 
 @onready var sprite := $AnimatedSprite2D
 @onready var attack_area := $AttackArea
@@ -61,12 +63,15 @@ func idle_logic() -> void:
 func walk_logic() -> void:
 	var direction = Input.get_axis("Move_Left", "Move_Right")
 
+	if direction != 0:
+		facing_direction = sign(direction)
+
 	if direction == 0:
 		current_state = State.IDLE
 		return
 
 	velocity.x = direction * SPEED
-	sprite.flip_h = direction < 0
+	sprite.flip_h = facing_direction == -1
 	sprite.play("Walking Animation")
 
 	if Input.is_action_just_pressed("Move_Up") and is_on_floor():
@@ -81,10 +86,13 @@ func walk_logic() -> void:
 	if Input.is_action_just_pressed("Punch"): #Guys we need a better attack animation
 		enter_attack_state()
 
+
 func jump_logic() -> void:
 	var direction = Input.get_axis("Move_Left", "Move_Right")
+	if direction != 0:
+		facing_direction = sign(direction)
 	velocity.x = direction * SPEED
-	sprite.flip_h = direction < 0
+	sprite.flip_h = facing_direction == -1
 
 	#if velocity.y < 0:
 		#sprite.play("Jump Animation") #Please send me a jump animation already
@@ -120,6 +128,10 @@ func _on_can_dash_again_timer_timeout() -> void:
 func enter_attack_state() -> void:
 	current_state = State.ATTACK
 	velocity.x = 0
+
+	# FORCE HURTBOX FLIP
+	attack_area.scale.x = facing_direction
+
 	attack_area.monitoring = true
 	sprite.play("Punch Animation")
 	attack_sequence()

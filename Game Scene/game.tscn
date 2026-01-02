@@ -1,4 +1,4 @@
-[gd_scene load_steps=46 format=3 uid="uid://w324y67ih531"]
+[gd_scene load_steps=63 format=3 uid="uid://w324y67ih531"]
 
 [ext_resource type="Script" uid="uid://d2gqyo2ftllyh" path="res://Scripts/game.gd" id="1_msr6v"]
 [ext_resource type="Script" uid="uid://4ftderbx35rt" path="res://Scripts/Main Character Body2D.gd" id="2_pdlhe"]
@@ -6,19 +6,65 @@
 [ext_resource type="Script" uid="uid://bmtpq8lqtru6q" path="res://Scripts/Main Character Hitbox2D.gd" id="3_msr6v"]
 [ext_resource type="Texture2D" uid="uid://6dwu78wp0o7d" path="res://Animation Assets and Icons/IdlePrince.png" id="4_mpr0x"]
 [ext_resource type="Texture2D" uid="uid://cuoktglh2x2ua" path="res://Animation Assets and Icons/WalkingPrince.png" id="5_g2nhv"]
-[ext_resource type="Texture2D" uid="uid://boj8v846xf0uh" path="res://Animation Assets and Icons/ForeGround.png" id="6_chps7"]
 [ext_resource type="Texture2D" uid="uid://dhrsvs040gj37" path="res://Animation Assets and Icons/icon.svg" id="7_pdlhe"]
 [ext_resource type="Texture2D" uid="uid://dh0evegviu1eb" path="res://Animation Assets and Icons/PunchPrince.png" id="8_chps7"]
-[ext_resource type="Texture2D" uid="uid://bpwrxc67nxmgm" path="res://Animation Assets and Icons/Background 2.png" id="9_mpr0x"]
+[ext_resource type="Texture2D" uid="uid://ocibimq0n8rm" path="res://Animation Assets and Icons/Room1-20251229T151219Z-3-001/Room1/Room1_01.png" id="10_php48"]
+[ext_resource type="Texture2D" uid="uid://75v2sdblbb63" path="res://Animation Assets and Icons/Room1-20251229T151219Z-3-001/Room1/Room1_03.png" id="11_bvvsu"]
 [ext_resource type="PackedScene" uid="uid://cck4cuw2v1w21" path="res://Game Scene/pause_menu.tscn" id="12_bvvsu"]
+[ext_resource type="Texture2D" uid="uid://cge1r6kpgoycp" path="res://Animation Assets and Icons/Room1-20251229T151219Z-3-001/Room1/Room1_02.png" id="12_qci61"]
+[ext_resource type="Texture2D" uid="uid://cao8sqwhm14po" path="res://Animation Assets and Icons/Room2-20251229T151306Z-3-001/Room2/Room2_01.png" id="13_ta7r5"]
+[ext_resource type="Texture2D" uid="uid://l12hx5fppftq" path="res://Animation Assets and Icons/Room2-20251229T151306Z-3-001/Room2/Room2_02.png" id="14_iu0dc"]
+[ext_resource type="Texture2D" uid="uid://g253oggl058r" path="res://Animation Assets and Icons/Room2-20251229T151306Z-3-001/Room2/Room2_03.png" id="15_vygkl"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_7knny"]
-size = Vector2(384, 20)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_iu0dc"]
+size = Vector2(1298, 44)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vygkl"]
+size = Vector2(582, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_php48"]
+size = Vector2(205, 111)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bvvsu"]
+size = Vector2(110, 85)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qci61"]
+size = Vector2(43, 84)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ly8hs"]
+size = Vector2(29, 192.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4576v"]
+size = Vector2(117, 25)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ebnpu"]
+size = Vector2(160, 33)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5jjxc"]
+size = Vector2(2398, 9.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5v2np"]
+size = Vector2(1981, 12)
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_fokcj"]
+height = 135.54321
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_u5iv4"]
+size = Vector2(127, 6)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_e66iy"]
+size = Vector2(73, 23)
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_u3d2m"]
+height = 107.480225
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lkoj3"]
+size = Vector2(94, 94)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_chps7"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_iotsf"]
-size = Vector2(18, 36)
+size = Vector2(18.5, 39)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_lc2xo"]
 atlas = ExtResource("4_mpr0x")
@@ -235,138 +281,176 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ta7r5"]
-size = Vector2(11.5, 6)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_msr6v"]
-size = Vector2(20, 54)
+size = Vector2(18.75, 8)
 
 [node name="First Level" type="Node2D"]
 script = ExtResource("1_msr6v")
+metadata/_edit_vertical_guides_ = [-252.0]
 
-[node name="Ceiling1" type="StaticBody2D" parent="."]
-position = Vector2(53, -40)
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Ceiling1"]
-position = Vector2(53, 0)
-shape = SubResource("RectangleShape2D_7knny")
+[node name="Pause Menu" parent="CanvasLayer" instance=ExtResource("12_bvvsu")]
 
-[node name="Background1" type="Sprite2D" parent="."]
-position = Vector2(106.500015, 33.000004)
-scale = Vector2(0.064166665, 0.125)
-texture = ExtResource("9_mpr0x")
+[node name="Room1Tomb" type="StaticBody2D" parent="."]
+
+[node name="Room1FarthestLayer" type="Parallax2D" parent="Room1Tomb"]
+scroll_scale = Vector2(0.98, 0.98)
+
+[node name="Sprite2D3" type="Sprite2D" parent="Room1Tomb/Room1FarthestLayer"]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("10_php48")
+
+[node name="Room1MidLayer" type="Parallax2D" parent="Room1Tomb"]
+scroll_scale = Vector2(0.99, 0.99)
+
+[node name="Sprite2D2" type="Sprite2D" parent="Room1Tomb/Room1MidLayer"]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("11_bvvsu")
+
+[node name="Room1ClosestLayer" type="Parallax2D" parent="Room1Tomb"]
+texture_filter = 1
+
+[node name="Sprite2D1" type="Sprite2D" parent="Room1Tomb/Room1ClosestLayer"]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("12_qci61")
+
+[node name="BottomFloor" type="CollisionShape2D" parent="Room1Tomb"]
+position = Vector2(-100, 176)
+shape = SubResource("RectangleShape2D_iu0dc")
+
+[node name="TopFloor" type="CollisionShape2D" parent="Room1Tomb"]
+position = Vector2(-38, 112)
+shape = SubResource("RectangleShape2D_vygkl")
+
+[node name="Ceiling1" type="CollisionShape2D" parent="Room1Tomb"]
+position = Vector2(-647.5, -31.5)
+shape = SubResource("RectangleShape2D_php48")
+
+[node name="Ceiling2" type="CollisionShape2D" parent="Room1Tomb"]
+position = Vector2(693, -45.5)
+shape = SubResource("RectangleShape2D_bvvsu")
+
+[node name="Ceiling3" type="CollisionShape2D" parent="Room1Tomb"]
+position = Vector2(616.5, -65)
+shape = SubResource("RectangleShape2D_qci61")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Room1Tomb"]
+position = Vector2(664, 97.75)
+shape = SubResource("RectangleShape2D_ly8hs")
+
+[node name="VeryBottomFloor" type="CollisionShape2D" parent="Room1Tomb"]
+position = Vector2(608.5, 207.5)
+shape = SubResource("RectangleShape2D_4576v")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Room1Tomb"]
+position = Vector2(-38, 54.5)
+shape = SubResource("RectangleShape2D_ebnpu")
+
+[node name="Room2DragonCorpsee" type="StaticBody2D" parent="."]
+position = Vector2(-1950, 41)
+
+[node name="Room2FarthestLayer" type="Parallax2D" parent="Room2DragonCorpsee"]
+scroll_scale = Vector2(0.99, 0.99)
+
+[node name="Sprite2D" type="Sprite2D" parent="Room2DragonCorpsee/Room2FarthestLayer"]
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("13_ta7r5")
+
+[node name="Room2MidLayer" type="Parallax2D" parent="Room2DragonCorpsee"]
+
+[node name="Sprite2D" type="Sprite2D" parent="Room2DragonCorpsee/Room2MidLayer"]
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("14_iu0dc")
+
+[node name="Room2ClosestLayer" type="Parallax2D" parent="Room2DragonCorpsee"]
+
+[node name="Sprite2D" type="Sprite2D" parent="Room2DragonCorpsee/Room2ClosestLayer"]
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("15_vygkl")
+
+[node name="Room2Floor" type="CollisionShape2D" parent="Room2DragonCorpsee"]
+position = Vector2(1, 122.25)
+shape = SubResource("RectangleShape2D_5jjxc")
+
+[node name="Room2TopCeiling" type="CollisionShape2D" parent="Room2DragonCorpsee"]
+position = Vector2(12.5, -118)
+shape = SubResource("RectangleShape2D_5v2np")
+
+[node name="CeilingCurveLeft" type="CollisionShape2D" parent="Room2DragonCorpsee"]
+position = Vector2(-1038, -69)
+rotation = 0.3926991
+shape = SubResource("CapsuleShape2D_fokcj")
+
+[node name="BottomLeftCeiling" type="CollisionShape2D" parent="Room2DragonCorpsee"]
+position = Vector2(-1136.5, 2)
+shape = SubResource("RectangleShape2D_u5iv4")
+
+[node name="BottomRightCeiling" type="CollisionShape2D" parent="Room2DragonCorpsee"]
+position = Vector2(1162.5, -6.5)
+shape = SubResource("RectangleShape2D_e66iy")
+
+[node name="CeilingCurveRight" type="CollisionShape2D" parent="Room2DragonCorpsee"]
+position = Vector2(1081, -37)
+rotation = -0.7853982
+shape = SubResource("CapsuleShape2D_u3d2m")
 
 [node name="Enemy1" type="CharacterBody2D" parent="." groups=["Enemy"]]
-position = Vector2(874, 5)
+position = Vector2(400, 110)
 script = ExtResource("3_g2nhv")
 
+[node name="RayCast2D" type="RayCast2D" parent="Enemy1"]
+position = Vector2(160, -1)
+target_position = Vector2(150, 0)
+collision_mask = 2
+
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Enemy1"]
+position = Vector2(105, -17)
 shape = SubResource("RectangleShape2D_lkoj3")
 
 [node name="Sprite2D" type="Sprite2D" parent="Enemy1"]
-position = Vector2(2.3543835e-05, 4.7683716e-07)
-scale = Vector2(0.17187549, 0.171875)
+position = Vector2(105.99999, -18)
+scale = Vector2(0.8, 0.8)
 texture = ExtResource("7_pdlhe")
 
-[node name="Main Character Body2D2" type="CharacterBody2D" parent="."]
+[node name="AttackArea2D" type="Area2D" parent="Enemy1"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Enemy1/AttackArea2D"]
+position = Vector2(169, -26)
+shape = SubResource("RectangleShape2D_chps7")
+
+[node name="Little Prince" type="CharacterBody2D" parent="."]
 position = Vector2(106, 52)
 script = ExtResource("2_pdlhe")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Main Character Body2D2"]
-position = Vector2(1, 0)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Little Prince"]
+position = Vector2(0.5, 3)
+scale = Vector2(2, 2)
 shape = SubResource("RectangleShape2D_iotsf")
 script = ExtResource("3_msr6v")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Main Character Body2D2"]
-scale = Vector2(0.07421874, 0.0640625)
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Little Prince"]
+scale = Vector2(0.15, 0.15)
 sprite_frames = SubResource("SpriteFrames_dhpj7")
 animation = &"Punch Animation"
 autoplay = "Idle Animation"
 frame = 2
 frame_progress = 1.0
 
-[node name="Camera2D" type="Camera2D" parent="Main Character Body2D2"]
-zoom = Vector2(3, 3)
+[node name="Camera2D" type="Camera2D" parent="Little Prince"]
 
-[node name="Dash_timer" type="Timer" parent="Main Character Body2D2"]
+[node name="Dash_timer" type="Timer" parent="Little Prince"]
 wait_time = 0.2
 
-[node name="Can_dash_again_timer" type="Timer" parent="Main Character Body2D2"]
+[node name="Can_dash_again_timer" type="Timer" parent="Little Prince"]
 wait_time = 0.5
 
-[node name="AttackArea" type="Area2D" parent="Main Character Body2D2"]
+[node name="AttackArea" type="Area2D" parent="Little Prince"]
 monitoring = false
 
-[node name="Main Character Hurt Box" type="CollisionShape2D" parent="Main Character Body2D2/AttackArea"]
-position = Vector2(17, -2)
+[node name="Main Character Hurt Box" type="CollisionShape2D" parent="Little Prince/AttackArea"]
+position = Vector2(28.375, -3)
 shape = SubResource("RectangleShape2D_ta7r5")
 
-[node name="Floor1" type="StaticBody2D" parent="."]
-position = Vector2(53, 112)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor1"]
-position = Vector2(53, 0)
-shape = SubResource("RectangleShape2D_7knny")
-
-[node name="Sprite2D" type="Sprite2D" parent="Floor1"]
-position = Vector2(52.999985, -46.000004)
-scale = Vector2(0.064333335, 0.057)
-texture = ExtResource("6_chps7")
-
-[node name="Vertical Coloumn1" type="StaticBody2D" parent="."]
-position = Vector2(336, 58)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Vertical Coloumn1"]
-position = Vector2(0, 17)
-shape = SubResource("RectangleShape2D_msr6v")
-
-[node name="Sprite2D" type="Sprite2D" parent="Vertical Coloumn1"]
-position = Vector2(-46.502846, 17.122952)
-rotation = 4.712389
-scale = Vector2(0.009195367, 0.05794898)
-texture = ExtResource("6_chps7")
-
-[node name="Vertical Coloumn2" type="StaticBody2D" parent="."]
-position = Vector2(400, 58)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Vertical Coloumn2"]
-position = Vector2(0, 17)
-shape = SubResource("RectangleShape2D_msr6v")
-
-[node name="Sprite2D" type="Sprite2D" parent="Vertical Coloumn2"]
-position = Vector2(-46.502846, 17.122952)
-rotation = 4.712389
-scale = Vector2(0.009195367, 0.05794898)
-texture = ExtResource("6_chps7")
-
-[node name="Vertical Coloumn3" type="StaticBody2D" parent="."]
-position = Vector2(450, 58)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Vertical Coloumn3"]
-position = Vector2(0, 17)
-shape = SubResource("RectangleShape2D_msr6v")
-
-[node name="Sprite2D" type="Sprite2D" parent="Vertical Coloumn3"]
-position = Vector2(-46.502846, 17.122952)
-rotation = 4.712389
-scale = Vector2(0.009195367, 0.05794898)
-texture = ExtResource("6_chps7")
-
-[node name="Floor2" type="StaticBody2D" parent="."]
-position = Vector2(650, 35)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor2"]
-position = Vector2(53, 0)
-shape = SubResource("RectangleShape2D_7knny")
-
-[node name="Sprite2D" type="Sprite2D" parent="Floor2"]
-position = Vector2(52.999985, -46.000004)
-scale = Vector2(0.064333335, 0.057)
-texture = ExtResource("6_chps7")
-
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
-
-[node name="Pause Menu" parent="CanvasLayer" instance=ExtResource("12_bvvsu")]
-
-[connection signal="timeout" from="Main Character Body2D2/Dash_timer" to="Main Character Body2D2" method="_on_dash_timer_timeout"]
-[connection signal="timeout" from="Main Character Body2D2/Can_dash_again_timer" to="Main Character Body2D2" method="_on_can_dash_again_timer_timeout"]
-[connection signal="body_entered" from="Main Character Body2D2/AttackArea" to="Main Character Body2D2" method="_on_attack_area_body_entered"]
+[connection signal="timeout" from="Little Prince/Dash_timer" to="Little Prince" method="_on_dash_timer_timeout"]
+[connection signal="timeout" from="Little Prince/Can_dash_again_timer" to="Little Prince" method="_on_can_dash_again_timer_timeout"]
+[connection signal="body_entered" from="Little Prince/AttackArea" to="Little Prince" method="_on_attack_area_body_entered"]
