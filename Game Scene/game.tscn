@@ -431,10 +431,8 @@ script = ExtResource("3_msr6v")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Little Prince"]
 scale = Vector2(0.15, 0.15)
 sprite_frames = SubResource("SpriteFrames_dhpj7")
-animation = &"Punch Animation"
+animation = &"Walking Animation"
 autoplay = "Idle Animation"
-frame = 2
-frame_progress = 1.0
 
 [node name="Camera2D" type="Camera2D" parent="Little Prince"]
 

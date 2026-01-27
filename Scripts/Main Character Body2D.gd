@@ -129,7 +129,6 @@ func enter_attack_state() -> void:
 	current_state = State.ATTACK
 	velocity.x = 0
 
-	# FORCE HURTBOX FLIP
 	attack_area.scale.x = facing_direction
 
 	attack_area.monitoring = true

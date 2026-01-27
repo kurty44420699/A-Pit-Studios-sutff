@@ -1,5 +1,5 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1767341443
+::res://::1769521366
 export_presets.cfg::TextFile::-1::1766946085::0::1::::<><><>0<>0<><>::
 README.md::TextFile::-1::1762175881::0::1::::<><><>0<>0<><>::
 ::res://addons/::1766562094
@@ -68,9 +68,9 @@ Trajan Pro Regular.ttf::FontFile::5608734594884181918::1766934566::1766934592::1
 ::res://Font/trajan-pro-regular_st5x9/::1766934566
 ::res://Font/trajan-pro-regular_st5x9/Trajan Pro Regular/::1766934592
 Trajan Pro Regular.ttf::FontFile::3953825911265241756::1766934566::1766934592::1::::<><><>0<>0<>033cc3c19f39085dfea70141b7f740b5<>res://.godot/imported/Trajan Pro Regular.ttf-f4ab69afd241c986025dc43a57d51684.fontdata::
-::res://Game Scene/::1767271800
+::res://Game Scene/::1768237269
 control.tscn::PackedScene::6846360874218464949::1767034623::0::1::::<><><>0<>0<><>::uid://cnt1v1wwlj1sn::::res://Scripts/Main Menu.gd<>uid://bj46ea4cowo6p::::res://Animation Assets and Icons/BeginnerBGTile02.png<>uid://cnq3bqfb4q0lw::::res://Animation Assets and Icons/Tile03.png<>uid://cl56blp46e6m1::::res://Font/Trajan Pro Regular.ttf<>uid://g0j1epinjavx::::res://Animation Assets and Icons/Tile01.png
-game.tscn::PackedScene::1603649593892598082::1767271800::0::1::::<><><>0<>0<><>::uid://d2gqyo2ftllyh::::res://Scripts/game.gd<>uid://4ftderbx35rt::::res://Scripts/Main Character Body2D.gd<>uid://bp15wqvuys7mg::::res://Scripts/enemy_1.gd<>uid://bmtpq8lqtru6q::::res://Scripts/Main Character Hitbox2D.gd<>uid://6dwu78wp0o7d::::res://Animation Assets and Icons/IdlePrince.png<>uid://cuoktglh2x2ua::::res://Animation Assets and Icons/WalkingPrince.png<>uid://dhrsvs040gj37::::res://Animation Assets and Icons/icon.svg<>uid://dh0evegviu1eb::::res://Animation Assets and Icons/PunchPrince.png<>uid://ocibimq0n8rm::::res://Animation Assets and Icons/Room1-20251229T151219Z-3-001/Room1/Room1_01.png<>uid://75v2sdblbb63::::res://Animation Assets and Icons/Room1-20251229T151219Z-3-001/Room1/Room1_03.png<>uid://cck4cuw2v1w21::::res://Game Scene/pause_menu.tscn<>uid://cge1r6kpgoycp::::res://Animation Assets and Icons/Room1-20251229T151219Z-3-001/Room1/Room1_02.png<>uid://cao8sqwhm14po::::res://Animation Assets and Icons/Room2-20251229T151306Z-3-001/Room2/Room2_01.png<>uid://l12hx5fppftq::::res://Animation Assets and Icons/Room2-20251229T151306Z-3-001/Room2/Room2_02.png<>uid://g253oggl058r::::res://Animation Assets and Icons/Room2-20251229T151306Z-3-001/Room2/Room2_03.png
+game.tscn::PackedScene::1603649593892598082::1768237269::0::1::::<><><>0<>0<><>::uid://d2gqyo2ftllyh::::res://Scripts/game.gd<>uid://4ftderbx35rt::::res://Scripts/Main Character Body2D.gd<>uid://bp15wqvuys7mg::::res://Scripts/enemy_1.gd<>uid://bmtpq8lqtru6q::::res://Scripts/Main Character Hitbox2D.gd<>uid://6dwu78wp0o7d::::res://Animation Assets and Icons/IdlePrince.png<>uid://cuoktglh2x2ua::::res://Animation Assets and Icons/WalkingPrince.png<>uid://dhrsvs040gj37::::res://Animation Assets and Icons/icon.svg<>uid://dh0evegviu1eb::::res://Animation Assets and Icons/PunchPrince.png<>uid://ocibimq0n8rm::::res://Animation Assets and Icons/Room1-20251229T151219Z-3-001/Room1/Room1_01.png<>uid://75v2sdblbb63::::res://Animation Assets and Icons/Room1-20251229T151219Z-3-001/Room1/Room1_03.png<>uid://cck4cuw2v1w21::::res://Game Scene/pause_menu.tscn<>uid://cge1r6kpgoycp::::res://Animation Assets and Icons/Room1-20251229T151219Z-3-001/Room1/Room1_02.png<>uid://cao8sqwhm14po::::res://Animation Assets and Icons/Room2-20251229T151306Z-3-001/Room2/Room2_01.png<>uid://l12hx5fppftq::::res://Animation Assets and Icons/Room2-20251229T151306Z-3-001/Room2/Room2_02.png<>uid://g253oggl058r::::res://Animation Assets and Icons/Room2-20251229T151306Z-3-001/Room2/Room2_03.png
 pause_menu.tscn::PackedScene::4935628282289469704::1767117969::0::1::::<><><>0<>0<><>::uid://d3oex6o06gcc4::::res://Scripts/pause_menu.gd<>uid://cl56blp46e6m1::::res://Font/Trajan Pro Regular.ttf<>uid://cnq3bqfb4q0lw::::res://Animation Assets and Icons/Tile03.png<>uid://g0j1epinjavx::::res://Animation Assets and Icons/Tile01.png
 ::res://samples/::1766562095
 ::res://samples/softbody2d/::1766562095
@@ -98,10 +98,10 @@ car.tscn::PackedScene::7858085811044268552::1766562095::0::1::::<><><>0<>0<><>::
 rigid_body_2d.gd::GDScript::5829078200228327517::1766562095::0::1::::<>RigidBody2D<><>0<>0<><>::
 ::res://samples/softbody2d/create-a-softbody/::1766562095
 create.tscn::PackedScene::3444588859635755541::1766562095::0::1::::<><><>0<>0<><>::uid://bxx5v7b42j4kf::::res://addons/softbody2d/softbody2d.svg<>uid://kol6k5y6rb8a::::res://addons/softbody2d/softbody2d.gd
-::res://Scripts/::1767261183
-enemy_1.gd::GDScript::3494788830874063086::1767117969::0::1::::<>CharacterBody2D<><>0<>0<><>::
+::res://Scripts/::1769142892
+enemy_1.gd::GDScript::3494788830874063086::1769142892::0::1::::<>CharacterBody2D<><>0<>0<><>::
 game.gd::GDScript::9067762204058151755::1762176241::0::1::::<>Node2D<><>0<>0<><>::
-Main Character Body2D.gd::GDScript::2046957570949898109::1767261183::0::1::::<>CharacterBody2D<><>0<>0<><>::
+Main Character Body2D.gd::GDScript::2046957570949898109::1767695419::0::1::::<>CharacterBody2D<><>0<>0<><>::
 Main Character Hitbox2D.gd::GDScript::3268851063287053558::1762877782::0::1::::<>CollisionShape2D<><>0<>0<><>::
 Main Menu.gd::GDScript::5726137056099154065::1766858328::0::1::::<>Control<><>0<>0<><>::
 pause_menu.gd::GDScript::9153736553760591785::1767117177::0::1::::<>Control<><>0<>0<><>::

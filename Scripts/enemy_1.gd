@@ -54,7 +54,6 @@ func chase_logic() -> void:
 	var direction = sign(player.position.x - position.x)
 	velocity.x = direction * SPEED
 
-	# Face the player (important for raycast)
 	raycast.target_position.x = direction * abs(raycast.target_position.x)
 
 	if position.distance_to(player.position) <= ATTACK_RANGE:
