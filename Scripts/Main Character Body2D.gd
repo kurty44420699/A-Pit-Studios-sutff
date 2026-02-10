@@ -4,8 +4,7 @@ enum State {
 	IDLE,
 	WALK,
 	JUMP,
-	DASH,
-	ATTACK
+	DASH
 }
 
 var current_state: State = State.IDLE
@@ -14,10 +13,10 @@ const SPEED = 300.0
 const JUMP_VELOCITY = -400.0
 const DASH_SPEED = 750.0
 
+var is_attacking := false
 var has_acquired_dash = false
 var can_dash := true
 var facing_direction := 1  
-
 
 @onready var sprite := $AnimatedSprite2D
 @onready var attack_area := $AttackArea
@@ -34,8 +33,9 @@ func _physics_process(delta: float) -> void:
 			jump_logic()
 		State.DASH:
 			dash_logic()
-		State.ATTACK:
-			attack_logic()
+
+	if Input.is_action_just_pressed("Punch") and not is_attacking:
+		enter_attack_state()
 
 	move_and_slide()
 
@@ -94,6 +94,7 @@ func jump_logic() -> void:
 	velocity.x = direction * SPEED
 	sprite.flip_h = facing_direction == -1
 
+
 	#if velocity.y < 0:
 		#sprite.play("Jump Animation") #Please send me a jump animation already
 	#else:
@@ -126,13 +127,13 @@ func _on_can_dash_again_timer_timeout() -> void:
 		can_dash = true
 
 func enter_attack_state() -> void:
-	current_state = State.ATTACK
-	velocity.x = 0
+	is_attacking = true
+	velocity.x = 0   # optional: lock movement during attack
 
 	attack_area.scale.x = facing_direction
-
 	attack_area.monitoring = true
 	sprite.play("Punch Animation")
+
 	attack_sequence()
 
 func attack_logic() -> void:
@@ -145,5 +146,6 @@ func _on_attack_area_body_entered(body: Node) -> void:
 func attack_sequence() -> void:
 	await get_tree().create_timer(0.25).timeout
 	attack_area.monitoring = false
+
 	await get_tree().create_timer(0.4).timeout
-	current_state = State.IDLE
+	is_attacking = false
